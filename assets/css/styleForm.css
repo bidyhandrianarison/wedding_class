@@ -1,0 +1,103 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.back{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+}
+.back a {
+    grid-column: 12/13;
+    
+}
+.back a{
+    width: 2em;
+    color: #ddad6f;
+}
+
+body{
+    color: #8a6d3c;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #fef1df;
+    width: 65vw;
+    transform: (-50%,-50%);
+    font-weight: bold;
+}
+form{
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+}
+form h1{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color:  #dec6ac;
+}
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corps-formulaire .groupe{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 1vh 3vw;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cfd;
+    border-radius: 5px;
+}
+   
+form .corps-formulaire .gauche{
+    margin-right: 40px;
+}
+form .corps-formulaire .droit .groupe{
+    height: 32.2vh;
+} 
+form .corps-formulaire .droit .groupe textarea{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 2px solid #8a6d3c;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-fourmulaire button{
+    margin-top: 10px;
+    background-color: #8a6d3c;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: nones;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-fourmulaire :hover{
+    transform: scale(1.10); 
+ }
+
+ @media screen and (max-width: 920px){
+   form .corps-formulaire .droit{
+    margin-left: 0px;
+   }
+
+ }
+
+ .fa-solid .fa-circle-xmark{
+    background: none;
+    border: none;
+ }

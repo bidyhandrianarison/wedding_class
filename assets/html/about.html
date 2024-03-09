@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Class</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="../../assets/js/script.js"></script>
+    <style>
+        /* Animation de déplacement vers la gauche */
+        @keyframes deplacementGauche {
+            from { transform: translateX(0px); } /* Position initiale (aucun déplacement) */
+            to { transform: translateX(-80px); } /* Déplacement vers la gauche de 200px */
+        }
+        
+        /* Classe pour l'élément animé */
+        .deplacer-gauche {
+            animation: deplacementGauche 1s ease forwards; /* Animation de 1 seconde avec transition fluide */
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <div id="logo"><img src="../images/logo.png" alt=""></div>
+        <div class="menu">
+            <ul>
+                <li><button id="home" href="" onclick="redirectTo('../../index.html')"> ACCUEIL</button></li>
+                <li><button id="article" href="" onclick="redirectTo('./Hommeart.html')"> ARTICLES</button> </li>
+                <li><button id="info" href="" onclick="redirectTo('./about.html')">A PROPOS</button> </li>
+            </ul>
+        </div>
+        
+    </nav>
+    
+</header>
+<body>
+    <main>
+        <section id="about">
+            <div class="abouthead"><h1>Quelques mots à propos de nous</h1></div>
+            <div class="article">
+                <div class="content">
+                    <h2>Nous sommes des étudiants de la MISA</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore accusamus error velit laudantium id maxime, nisi labore soluta magni eum necessitatibus nam, natus et, tempore quaerat. Aspernatur assumenda, harum repellendus ad rerum reiciendis dolorum voluptates quo sapiente accusantium minima similique impedit, aperiam magnam numquam inventore eveniet ea natus nesciunt itaque autem modi velit. Unde nulla quaerat dolorem nisi? Odit.</p>
+                </div>
+                <div class="picture">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="content2">
+                    <h2>K-trika et et le projet "Wedding Class"</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore accusamus error velit laudantium id maxime, nisi labore soluta magni eum necessitatibus nam, natus et, tempore quaerat. Aspernatur assumenda, harum repellendus ad rerum reiciendis dolorum voluptates quo sapiente accusantium minima similique impedit, aperiam magnam numquam inventore eveniet ea natus nesciunt itaque autem modi velit. Unde nulla quaerat dolorem nisi? Odit.</p>
+
+                </div>
+                <div class="picture2">
+                    <img src="../images/accueil/pexels-terje-sollie-313707.jpg" alt="">
+                </div>
+            
+                
+            </div>
+            <div id="member"><button  onclick="info('reset')" >Les membres de notre team</button>
+            </div><br>
+            <div class="team">
+                <div id="sid">
+                    <img src="../images/sid.png" alt="Image1" onclick="info('Bidy')">
+                    <h3>Sid Saoera</h3>
+                    <h4>Front-End developper</h4>
+
+                </div>
+                <div id="tsim">
+                    <img src="../images/fauxtsim.png" alt="Image2" onclick="info('Liantsoa')">
+                    <h3>Faux Tsim</h3>
+                    <h4>Front-End developper</h4>
+
+                </div>
+                <div>
+                    <img src="../images/datoa.png" alt="Image3" onclick="info('Tsinjo')">
+                    <h3>Datoa Postgresy</h3>
+                    <h4>Front-End developper</h4>
+
+                </div>
+                <div>
+                    <img src="../images/sipansymfony.png" alt="Image4" onclick="info('Sarobidy')">
+                    <h3>Sipan'ny Symfony</h3>
+                    <h4>Front-End developper</h4>
+                </div>
+                <div id="">
+                    <img src="../images/totem.png" alt="Image5" onclick="info('Lova')">
+                    <h3>Totem</h3>
+                    <h4>Front-End developper</h4>
+                </div>
+                <div id="">
+                    <img src="../images/tsyalaise.png" alt="Image6" onclick="info('Freddy')">
+                    <h3>Tsy à l'aise</h3>
+                    <h4>Back-End developper</h4>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer> <h1>Merci pour votre visite!!</h1></footer>  
+    <script src="../../assets/js/teamInfo.js"></script>
+</body>
+
+</html>

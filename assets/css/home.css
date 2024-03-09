@@ -1,0 +1,116 @@
+h1
+{
+  font-size: 100px;
+  font-family: cursive;
+  text-align: center;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg,#c4b59d,#4b3613);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin: 0;
+  animation-duration: 3s;
+  animation: 2s anim-popoutin ease;
+  
+}
+@keyframes anim-popoutin {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bouton
+{
+  border-radius: 20px;
+  background-image: linear-gradient(45deg,#8a6d3c, #dac095);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 1vw;
+  width: 20vw;
+  height: 2.5vw;
+  margin: auto;
+}
+.bouton:hover
+{
+  cursor: pointer;
+  transform:scale(1.08);
+}
+a
+{
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffffff;
+}
+.pboy
+{
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  margin-right: 100px;
+  margin-left: 50px;
+  background-image: url(../images/accueil/a1.png);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-repeat: no-repeat;
+  -webkit-animation-name: example2;
+  -webkit-animation-duration: 20s;
+  animation-name: example2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+  @keyframes example2 {
+    0% {background-image: url(../images/accueil/a1.png); background-repeat: no-repeat;background-size: cover;}
+    25% {background-image: url(../images/accueil/a2.png); background-repeat: no-repeat;background-size: cover;}
+    75% {background-image: url(../images/accueil/a3.png); background-repeat: no-repeat;background-size: cover;}
+    100% {background-image: url(../images/accueil/a4.png); background-repeat: no-repeat;background-size: cover;}
+  }
+  .pgirl
+{
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  background-image: url(../images/accueil/a8.png);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-repeat: no-repeat;
+  -webkit-animation-name: example1;
+  -webkit-animation-duration: 20s;
+  animation-name: example1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+  @keyframes example1 {
+    0% {background-image: url(../images/accueil/a8.png); background-repeat: no-repeat;background-size: cover;}
+    25% {background-image: url(../images/accueil/a9.png); background-repeat: no-repeat;background-size: cover;}
+    75% {background-image: url(../images/accueil/a10.png); background-repeat: no-repeat;background-size: cover;}
+    100% {background-image: url(../images/accueil/a11.png); background-repeat: no-repeat;background-size: cover;}
+  }
+.slide
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slide > div 
+{
+  margin-top: 0;
+}
+.all
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}

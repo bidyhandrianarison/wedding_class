@@ -1,0 +1,140 @@
+@media only screen and (max-width:965px)  {
+  .menu{
+    grid-column: 8/13 ;
+     
+  }
+}
+@media only screen and (max-width:766px)  {
+.menu{
+  grid-column: 6/13 ;
+   
+}
+.content{
+    padding: 4em;
+    grid-area: 1/2/10/9;
+  }
+}
+@media only screen and (max-width:546px)  {
+.menu{
+  grid-column: 4/13 ;
+   
+}
+.content{
+    padding: 4em;
+    grid-area: 1/1/10/11;
+  }
+}
+@media only screen and (max-width:425px)  {
+nav {
+    width: 102;
+    height: 66px;
+    grid-template-rows: repeat(3,1fr);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+#home{
+  grid-column: 6/13 ;
+  grid-row: 1/2;
+}
+#article{
+    grid-column: 6/13 ;
+    grid-row: 2/3;
+  }
+  #info{
+    grid-column: 6/13 ;
+    grid-row: 3/4;
+  }
+  .content{
+    padding: 4em;
+    grid-area: 1/1/10/11;
+  }
+}
+@media only screen and (max-width:436px){
+  .homme{
+    background-color: #f8f9fa;
+      padding:  1%;
+      text-align: center;
+    width:45vw;
+    display: inline-block;
+    font-size: small;
+    transition: all 1s;
+  }
+  .femme{
+    background-color: #f8f9fa;
+      padding:  1%;
+      text-align: center;
+      width: 45vw;
+      font-size: small;
+    display: inline-block;
+  }
+  .bouton{
+    text-align: center;
+    width: 15vw;
+    height: 3vh;
+    border: none;
+    color: #fffefe;
+    background-color: #ddad6f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    border-radius: 30%;
+    font-size:88% ;
+}
+ .article{
+  width: 77%;
+  height: 77%;
+  text-align: center;
+  margin: 10%;
+  font-size: small;
+}
+.bouton a{
+  font-size: small;
+}
+.center img{
+  width:70px;
+  height:70px;
+}
+}
+@media only screen and (max-width:874px){
+  .homme{
+    background-color: #f8f9fa;
+      padding:  1%;
+      text-align: center;
+    width:45vw;
+    display: inline-block;
+    font-size: small;
+    transition: all 1s;
+  }
+  .femme{
+    background-color: #f8f9fa;
+      padding:  1%;
+      text-align: center;
+      width: 45vw;
+      font-size: small;
+    display: inline-block;
+  }
+  .bouton{
+    text-align: center;
+    width: 15vw;
+    height: 3vh;
+    border: none;
+    color: #fffefe;
+    background-color: #ddad6f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    border-radius: 30%;
+    font-size:88% ;
+}
+ .article{
+  width: 77%;
+  height: 77%;
+  text-align: center;
+  margin: 10%;
+  font-size: small;
+}
+.bouton a{
+  font-size: small;
+}
+.center img{
+  width:70px;
+  height:70px;
+}
+}
